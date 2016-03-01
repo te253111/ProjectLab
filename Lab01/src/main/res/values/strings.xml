@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">ProjectLab</string>
+    <string name="itemmenu1">Search</string>
+    <string name="itemmenu2">Profile</string>
+    <string name="itemmenu3">Setting</string>
+    <string name="openmenu">openmenu</string>
+    <string name="closemenu">closemenu</string>
 </resources>
