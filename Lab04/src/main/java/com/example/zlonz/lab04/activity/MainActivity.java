@@ -1,7 +1,10 @@
 package com.example.zlonz.lab04.activity;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.Toast;
 
@@ -10,6 +13,7 @@ import com.example.zlonz.lab04.adapter.ImageAdpter;
 import com.example.zlonz.lab04.dao.DaoManager;
 import com.example.zlonz.lab04.dao.membercollectiondao;
 import com.example.zlonz.lab04.http.HttpService;
+import com.example.zlonz.lab04.view.custum_viewgroup;
 
 import java.io.IOException;
 
@@ -48,6 +52,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onFailure(Call<membercollectiondao> call, Throwable t) {
                 Toast.makeText(MainActivity.this,t.toString(),Toast.LENGTH_SHORT).show();
+            }
+        });
+
+
+        gv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent i = new Intent(MainActivity.this,Main2Activity.class);
+                i.putExtra("url",DaoManager.getInstance().getDao().getResults().get(position).getUrl());
+                startActivity(i);
             }
         });
     }

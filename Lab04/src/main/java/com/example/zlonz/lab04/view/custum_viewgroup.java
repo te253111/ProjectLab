@@ -19,7 +19,6 @@ public class custum_viewgroup extends FrameLayout {
     TextView txtv;
 
 
-
     public custum_viewgroup(Context context) {
         super(context);
         init();
@@ -55,5 +54,9 @@ public class custum_viewgroup extends FrameLayout {
 
     public void setTxtv(String name) {
         txtv.setText(name);
+    }
+
+    public String getTxtv() {
+        return txtv.getText().toString();
     }
 }
