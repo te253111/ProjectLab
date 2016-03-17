@@ -10,6 +10,6 @@
         android:layout_height="match_parent"
         android:verticalSpacing="2dp"
         android:horizontalSpacing="2dp"
-        android:numColumns="2">
+        android:numColumns="@integer/gridnum">
     </GridView>
 </RelativeLayout>
