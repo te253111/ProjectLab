@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/Lab01" />
             <option value="$PROJECT_DIR$/Lab02" />
             <option value="$PROJECT_DIR$/Lab03" />
+            <option value="$PROJECT_DIR$/Lab04" />
           </set>
         </option>
         <option name="myModules">
@@ -20,6 +21,7 @@
             <option value="$PROJECT_DIR$/Lab01" />
             <option value="$PROJECT_DIR$/Lab02" />
             <option value="$PROJECT_DIR$/Lab03" />
+            <option value="$PROJECT_DIR$/Lab04" />
           </set>
         </option>
       </GradleProjectSettings>
